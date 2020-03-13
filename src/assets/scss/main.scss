@@ -1,0 +1,35 @@
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.current_table {
+  th:nth-child(n + 5) {
+    display: none;
+  }
+  
+  tr td:nth-child(n + 5) {
+    display: none;
+  }
+  .current_data {
+    font-weight: bold;
+  }
+  .current_data:nth-child(n + 4) {
+    color: #ff4442;
+  }
+}
+
+.local_table{
+  .area {
+    font-weight: bold;
+  }
+  .additional_patients {
+    color: #ff4442;
+    font-weight: bold;
+  }
+  
+  .patients {
+    font-weight: bold;
+  }
+}
+

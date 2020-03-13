@@ -1,0 +1,38 @@
+#header {
+    display: inline-block;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+h1 {
+    color: #ff4442;
+    float: left;
+}
+
+.menu {
+    float: right;
+
+    .spot {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 30px;
+    }
+
+    ul li {
+        float: left;
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+        padding: 5px;
+
+        &:hover {
+            color: #c1c1c1;
+        }
+    }
+}
