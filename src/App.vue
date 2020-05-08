@@ -48,7 +48,28 @@ export default {
 
 #app {
   text-align: center;
-  width: 1200px;
+  width: 1280px;
   margin: 0 auto;
+}
+
+// 미디어쿼리
+/* PC Device */
+@media (max-width: 1280px) {
+  #app {
+    width: 100%;
+  }
+}
+/* Mobile, Tablet Device */
+@media (max-width: 768px) {
+  * {
+    font-size: 17px;
+  }
+}
+
+/* Mobile Device */
+@media (max-width: 479px) {
+  * {
+    font-size: 12px;
+  }
 }
 </style>

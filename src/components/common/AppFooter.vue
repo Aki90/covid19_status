@@ -41,4 +41,21 @@ footer {
     }
   }
 }
+
+// 미디어쿼리
+@media (max-width: 1280px) {
+  footer address p {
+    margin-right: 0.5rem;
+  }
+}
+/* Mobile, Tablet Device */
+@media (max-width: 768px) {
+  footer address p {
+    font-size: 0.5rem;
+
+    a {
+      font-size: 0.6rem;
+    }
+  }
+}
 </style>

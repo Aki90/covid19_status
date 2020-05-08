@@ -209,4 +209,17 @@ h3 {
     }
   }
 }
+
+// 미디어쿼리
+@media (max-width: 768px) {
+  .nation .button {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 479px) {
+  .nation .button {
+    font-size: 12px;
+  }
+}
 </style>

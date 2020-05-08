@@ -1,12 +1,12 @@
 <template>
-  <div id="header">
+  <header id="header">
     <router-link to="/"><h1>코로나19 현재현황</h1></router-link>
 
-    <div id="nav">
+    <nav id="nav">
       <router-link to="/">국내현황</router-link>
       <router-link to="/global">해외현황</router-link>
-    </div>
-  </div>
+    </nav>
+  </header>
 </template>
 
 <script>
@@ -34,6 +34,46 @@ export default {};
     a:hover {
       color: #fff;
       background: rgba(0, 0, 0, 0.7);
+    }
+  }
+}
+
+// 미디어쿼리
+@media (max-width: 1280px) {
+  #header {
+    margin-top: 1rem;
+  }
+  h1 {
+    padding-left: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  #header {
+    margin-top: 0;
+
+    h1 {
+      font-size: 1.3rem;
+      padding: 0.6rem;
+    }
+
+    #nav {
+      line-height: 51px;
+    }
+  }
+}
+@media (max-width: 479px) {
+  #header {
+    margin-bottom: 0.5rem;
+    h1 {
+      font-size: 1.3rem;
+      padding: 0.9rem;
+    }
+
+    #nav {
+      line-height: 42.59px;
+      a {
+        // padding: 1rem;
+      }
     }
   }
 }
