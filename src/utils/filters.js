@@ -12,3 +12,7 @@ export function formatDate(timestamp) {
   minutes = minutes > 9 ? minutes : `0${minutes}`;
   return `${year}-${month}-${day} ${hours}:${minutes}`;
 }
+
+export function makeComma(val) {
+  return String(val).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+}

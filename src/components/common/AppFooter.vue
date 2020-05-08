@@ -1,13 +1,44 @@
 <template>
-  <div>
-    <!-- <p>api 정리 및 작성자 등등등</p>
-    <p>이번엔 좀 깔끔하게</p> -->
-    <p>_</p>
-  </div>
+  <footer>
+    <address>
+      <p>
+        API address :
+        <a href="https://api.dropper.tech/" target="_blank">
+          https://api.dropper.tech
+        </a>
+      </p>
+      <p>
+        Copyright 2020 by
+        <a href="https://github.com/Aki90" target="_blank">
+          Aki90 ( Sehun Jeong ).
+        </a>
+        All right reserved
+      </p>
+    </address>
+  </footer>
 </template>
 
 <script>
 export default {};
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+footer {
+  width: 100%;
+  // margin: 1rem auto;
+  margin-top: 1rem;
+  font-style: italic;
+  padding: 50px 0;
+
+  address p {
+    font-size: 0.8rem;
+    text-align: right;
+    color: #8f8f8f;
+    padding-bottom: 0.1rem;
+
+    a {
+      color: #8f8f8f;
+    }
+  }
+}
+</style>
