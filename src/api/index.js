@@ -1,7 +1,4 @@
 import axios from 'axios';
-import { setInterceptors } from '@/utils/interceptors.js';
-
-// API Key 값 설정
 
 // Axios 초기화
 function createInstance(url) {
@@ -9,20 +6,19 @@ function createInstance(url) {
     baseURL: `${process.env.VUE_APP_API_URL}${url}`,
   });
 
-  return setInterceptors(instance);
+  return instance;
 }
 
-const instanceKorea = createInstance('/korea');
-const instanceGlobal = createInstance('/global');
+const instance = createInstance('');
 
 // 국내 환자 조회
 export function fetchKoreaData(locale) {
-  return instanceKorea.get('', {
+  return instance.get('/korea', {
     params: { locale: locale },
   });
 }
 
 // 해외 환자 조회
 export function fetchGlobalData(nation) {
-  return instanceGlobal.get('', { params: { nation: nation } });
+  return instance.get('/global', { params: { nation: nation } });
 }
